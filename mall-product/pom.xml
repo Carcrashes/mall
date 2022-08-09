@@ -16,6 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>2020.0.1</spring-cloud.version>
+        <mall-common.version>0.0.1-SNAPSHOT</mall-common.version>
     </properties>
     <dependencies>
         <dependency>
@@ -32,6 +33,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--mall-common  -->
+        <dependency>
+            <groupId>com.dy.mall</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>${mall-common.version}</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>

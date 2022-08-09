@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mall-member
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 82.156.174.201:8848
+      config:
+        server-addr: 82.156.174.201:8848
+        namespace: e3e5c986-b8e8-4974-be0f-b3f61b1a5d44  #指定命名空间
+        group: prod   #默认DEFAULT_GROUP
+        file-extension: yml  #指定配置文件类型  默认文件名： application.name-spring.profiles.active.file-extension
+#        配置多个拆分的配置集
+#        extension-configs:
+#          - data-id: mybatis
+#            group: prod
+#            refresh: true
